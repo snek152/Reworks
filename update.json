@@ -1,0 +1,10 @@
+{
+  "homepage": "https://github.com/snek152/reworks",
+  "1.16.5": {
+    "1.0": "<changelog for this version>"
+  },
+  "promos": {
+    "1.16.5-latest": "1.0",
+    "1.16.5-recommended": "1.0"
+  }
+}
