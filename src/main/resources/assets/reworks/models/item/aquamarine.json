@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "reworks:item/aquamarine.png"
+    "layer0": "reworks:item/aquamarine"
   }
 }
