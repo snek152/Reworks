@@ -1,31 +1,28 @@
-
 modLoader="javafml" #mandatory
-loaderVersion="[36,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+loaderVersion="[36,)" #mandatory
 license="MIT"
-issueTrackerURL="https://github.com/SneK152/SwordSelection/issues" #optional
-
+#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
 logoFile="reworks.png" #optional
 [[mods]] #mandatory
-
 modId="reworks" #mandatory
-version="${version}" #mandatory
+version="${file.jarVersion}" #mandatory
 displayName="Reworks" #mandatory
-updateJSONURL="https://github.com/SneK152/Reworks/blob/master/update.json" #optional
-#displayURL="http://example.com/" #optional
-#credits="Thanks for this example mod goes to Java" #optional
+#updateJSONURL="https://change.me.example.invalid/updates.json" #optional
+#displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
+credits="Credits for this mod goes to SneK152 (the mod developer)." #optional
 authors="SneK152" #optional
 description='''
-This mod is a complete overhaul to the game, adding in massive amounts of content.
+Reworks is a massive overhaul to the game.
 '''
 [[dependencies.reworks]] #optional
-modId="forge" #mandatory
-mandatory=true #mandatory
-versionRange="[36,)" #mandatory
-ordering="NONE"
-side="BOTH"
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[36,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
 [[dependencies.reworks]]
-modId="minecraft"
-mandatory=true
-versionRange="[1.16.5,1.17)"
-ordering="NONE"
-side="BOTH"
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
