@@ -1,13 +1,13 @@
 modLoader="javafml" #mandatory
 loaderVersion="[36,)" #mandatory
 license="MIT"
-#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
+issueTrackerURL="https://github.com/SneK152/Reworks/issues" #optional
 logoFile="reworks.png" #optional
 [[mods]] #mandatory
 modId="reworks" #mandatory
 version="${file.jarVersion}" #mandatory
 displayName="Reworks" #mandatory
-#updateJSONURL="https://change.me.example.invalid/updates.json" #optional
+updateJSONURL="https://github.com/SneK152/Reworks/blob/master/update.json" #optional
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
 credits="Credits for this mod goes to SneK152 (the mod developer)." #optional
 authors="SneK152" #optional
