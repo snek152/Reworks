@@ -9,6 +9,8 @@ import net.minecraftforge.fml.RegistryObject;
 
 public class ModItems {
     public static final RegistryObject<Item> AQUAMARINE = Registration.ITEMS.register("aquamarine",
-            () -> new Aquamarine(new Item.Properties().tab(ItemGroup.TAB_MATERIALS).rarity(Rarity.UNCOMMON).food(new Food.Builder().saturationMod(10.0f).nutrition(10).build())));
+            () -> new Aquamarine(new Item.Properties().tab(ItemGroup.TAB_MATERIALS).rarity(Rarity.UNCOMMON).fireResistant().stacksTo(1)));
+    public static final RegistryObject<Item> TOPAZ = Registration.ITEMS.register("topaz",
+            () -> new Topaz(new Item.Properties().tab(ItemGroup.TAB_MATERIALS).rarity(Rarity.UNCOMMON).stacksTo(1)));
     public static void register() {}
 }
