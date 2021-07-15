@@ -8,17 +8,18 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraft.world.World;
 
-public class Aquamarine extends Item {
-    public Aquamarine(Properties p_i48487_1_) {
+public class Ruby extends Item {
+    public Ruby(Properties p_i48487_1_) {
         super(p_i48487_1_);
     }
 
     @Override
     public void inventoryTick(ItemStack stack, World worldIn, Entity entity, int slot, boolean isSelected) {
         PlayerEntity playerIn = (PlayerEntity) entity;
-        if (playerIn.getMainHandItem().getItem() == ModItems.AQUAMARINE.get() || playerIn.getOffhandItem().getItem() == ModItems.AQUAMARINE.get()) {
-            if (playerIn.isInWater()) {
-                playerIn.addEffect(new EffectInstance(Effects.WATER_BREATHING, 0, 0, false, false, true));
+        if (playerIn.getMainHandItem().getItem() == ModItems.RUBY.get() || playerIn.getOffhandItem().getItem() == ModItems.RUBY.get()) {
+            if (playerIn.isOnFire() || playerIn.isInLava()) {
+                playerIn.addEffect(new EffectInstance(Effects.FIRE_RESISTANCE, 1, 0, false, false, true));
+                playerIn.clearFire();
             }
         }
     }

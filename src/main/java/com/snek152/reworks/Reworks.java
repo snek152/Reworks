@@ -1,5 +1,6 @@
 package com.snek152.reworks;
 
+import com.snek152.reworks.events.ModEvents;
 import com.snek152.reworks.item.ModItems;
 import com.snek152.reworks.util.Registration;
 import net.minecraft.block.Block;
@@ -32,6 +33,8 @@ public class Reworks
     public Reworks() {
         Registration.register();
         ModItems.register();
+
+        MinecraftForge.EVENT_BUS.register(new ModEvents());
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading
